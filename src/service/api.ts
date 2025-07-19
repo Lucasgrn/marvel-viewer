@@ -11,6 +11,9 @@ export const api = async (endpoint: string, filter?: string) => {
   const responseData = await response.json()
   const result = {
     code: responseData.code,
+    offset: responseData.data.offset,
+    count: responseData.data.count,
+    total: responseData.data.total,
     data: responseData.data.results
   }
   return result
