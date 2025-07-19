@@ -13,9 +13,9 @@ export default function Navbar() {
 
   return (
     <nav className="flex p-3 justify-center bg-neutral-900">
-      <div className="flex flex-row justify-between w-1/2">
-        <Link href={'/'}>
-          <h1>Viewer</h1>
+      <div className="flex justify-around w-full">
+        <Link href={'/'} className="flex self-center" >
+          <Image className="w-auto h-12 rounded-xl" src={"/M.png"} width={150} height={150} alt={'App Logo'} />
         </Link>
         <input className="border-1 border-black rounded-md p-2"
           placeholder="Procurar personagem..."
