@@ -1,4 +1,3 @@
-import { Story } from "./story";
 import { Thumbnail } from "./thumbnail";
 
 export interface Character {
@@ -6,5 +5,4 @@ export interface Character {
   name: string,
   description: string,
   thumbnail?: Thumbnail,
-  stories?: Array<Story>
 }
