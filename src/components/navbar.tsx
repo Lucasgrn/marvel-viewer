@@ -23,12 +23,11 @@ export default function Navbar() {
           onChange={(event) => { setInput(event.target.value) }}
           onKeyDown={handleKey}
         />
-        <Link href={'/history'} className="flex justify-between self-center  w-auto h-auto">
+        <Link href={'/character'} className="flex justify-between self-center  w-auto h-auto">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-1">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
           </svg>
-
-          <h1>History</h1>
+          <h1>Characters</h1>
         </Link>
       </div>
     </nav>
