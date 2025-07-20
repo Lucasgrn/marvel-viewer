@@ -1,3 +1,4 @@
+import AlphaFilter from "@/components/aphafilter"
 import Card from "@/components/card"
 import Paginator from "@/components/pagination"
 import { api } from "@/service/api"
@@ -14,7 +15,10 @@ export default async function Characters({ searchParams }: {
   const characters = response.data
   const page = Math.ceil((response.offset + 1) / limit)
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <div className="flex flex-col min-h-screen">
+      <div className="self-center">
+        <AlphaFilter />
+      </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-2 w-3/4 self-center">
         {characters.map((item: Character) => {
           return (
