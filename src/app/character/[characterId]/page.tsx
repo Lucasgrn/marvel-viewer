@@ -15,7 +15,7 @@ export default async function name({ params }: {
   const details = response.data[0]
   return (
     <div className="flex flex-col">
-      <div className="border-b-1 border-black bg-neutral-900 p-5">
+      <div className="border-b-1 border-neutral-400 bg-neutral-900 p-5">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 w-3/4 self-center">
           <Image className="rounded-4xl" src={`${details.thumbnail?.path}.${details.thumbnail?.extension}`} width={300} height={300} alt={`${details.name} image`} />
           <div>

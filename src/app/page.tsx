@@ -12,7 +12,7 @@ export default async function Home() {
     <section className="flex flex-col">
       <div className="flex m-4 justify-between">
         <h1 className="font-bold text-3xl">Some Characters featured in Marvel</h1>
-        <button className="flex border border-black rounded-lg hover:bg-stone-600 h-auto w-35 align-middle ">
+        <button className="flex border border-neutral-400 rounded-lg hover:bg-stone-600 h-auto w-35 align-middle ">
           <Link href={'/character'} className="flex justify-center align-middle h-full w-full p-2">
             <p className="mr-3">
               View all

@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Paginator(props: Pagination) {
   const { pages, isCurrent } = usePagination(props)
   return (
-    <div className="flex items-center justify-between border-t border-gray-200 bg-neutral-900 px-4 py-3 sm:px-6">
+    <div className="flex items-center justify-between bg-neutral-900 px-4 py-3 sm:px-6">
       <div className="flex flex-1 justify-between sm:hidden">
         <Link
           href={`?page=${props.page - 1}`}
@@ -23,7 +23,7 @@ export default function Paginator(props: Pagination) {
       </div>
       <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm text-gray-700">
+          <p className="text-sm text-white">
             Showing <span className="font-medium">{props.offset}</span> to <span className="font-medium">{props.offset + props.count - 1}</span> of{' '}
             <span className="font-medium">{props.total}</span> results
           </p>

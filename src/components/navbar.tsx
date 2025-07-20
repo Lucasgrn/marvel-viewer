@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href={'/'} className="flex self-center" >
           <Image className="w-auto h-12 rounded-xl" src={"/M.png"} width={150} height={150} alt={'App Logo'} />
         </Link>
-        <input className="border-1 border-black rounded-md p-2 m-2"
+        <input className="border-1 border-neutral-400 rounded-md p-2 m-2"
           placeholder="Search character..."
           onChange={(event) => { setInput(event.target.value) }}
           onKeyDown={handleKey}
